@@ -18,8 +18,8 @@ const Home = () => {
           tabBarActiveTintColor: '#355F43',
           tabBarLabelStyle: {
             textTransform: 'capitalize',
-            fontFamily: 'DMSans-Regular',
-            fontWeight: 'bold',
+            fontFamily: 'DMSans-Bold',
+            fontSize: 18,
           },
           tabBarIndicatorStyle: {backgroundColor: 'black'},
         }}>

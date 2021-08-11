@@ -75,15 +75,14 @@ const styles = StyleSheet.create({
 
   buyerName: {
     color: '#355F43',
-    fontWeight: 'bold',
-    fontFamily: 'DMSans-Regular',
+    fontFamily: 'DMSans-Bold',
   },
 
   duration: {
     color: '#355F43',
-    fontWeight: '100',
+    fontFamily: 'DMSans-Regular',
     fontSize: 12,
-    marginTop: 3,
+    marginTop: 1,
     marginLeft: 5,
   },
 
@@ -110,14 +109,12 @@ const styles = StyleSheet.create({
   },
 
   businessNameStyle: {
-    fontWeight: 'bold',
     fontSize: 20,
-    fontFamily: 'DMSans-Regular',
+    fontFamily: 'DMSans-Medium',
   },
 
   businessMetaData: {
     fontSize: 13,
-    fontWeight: '100',
     fontFamily: 'DMSans-Regular',
   },
 
