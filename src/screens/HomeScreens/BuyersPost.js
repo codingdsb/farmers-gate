@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 
 // components
-import BuyerCard from '../../components/BuyerCard';
+import CommodityCard from '../../components/CommodityCard';
 
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
@@ -30,7 +30,7 @@ const BuyersPost = () => {
       </TouchableHighlight>
 
       <ScrollView style={styles.buyersList}>
-        <BuyerCard
+        <CommodityCard
           buyerImgSrc={require('../../../assets/images/buyer.jpg')}
           commodityImgSrc={require('../../../assets/images/potato.jpeg')}
           businessName="Business Name"
@@ -40,7 +40,7 @@ const BuyersPost = () => {
           location="Bangalore, Karnataka"
         />
 
-        <BuyerCard
+        <CommodityCard
           buyerImgSrc={require('../../../assets/images/buyer.jpg')}
           commodityImgSrc={require('../../../assets/images/potato.jpeg')}
           businessName="Business Name"
