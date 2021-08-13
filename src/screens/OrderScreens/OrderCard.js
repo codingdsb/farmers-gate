@@ -6,7 +6,7 @@ import Card from '../../components/Card';
 const OrderCard = () => {
   return (
     <>
-      <Text>Order Card</Text>
+      <Text style={{height: 100, textAlign: 'center'}}>Order Card</Text>
     </>
   );
 };

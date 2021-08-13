@@ -19,8 +19,44 @@ import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import OrderCard from './OrderScreens/OrderCard';
+import PaymentCard from './OrderScreens/PaymentCard';
+import Swiper from 'react-native-screens-swiper/components/Swiper';
 
 const Orders = () => {
+  const style = {
+    borderActive: {
+      borderColor: '#355F43',
+      borderWidth: 2,
+    },
+    pillLabel: {
+      color: '#355F43',
+      fontFamily: 'DMSans-Bold',
+      fontSize: 16,
+      marginBottom: 10,
+      marginTop: -5,
+    },
+    activeLabel: {
+      color: '#355F43',
+    },
+    pillContainer: {
+      backgroundColor: '#f2f2f2',
+    },
+  };
+
+  const data = [
+    {
+      tabLabel: 'Order Card',
+      component: OrderCard,
+      props: {}, // (optional) additional props
+    },
+    {
+      tabLabel: 'Payment Card',
+      component: PaymentCard,
+      props: {}, // (optional) additional props
+    },
+  ];
+
   return (
     <ScrollView>
       {/* Profile Card  */}
@@ -240,7 +276,8 @@ const Orders = () => {
       />
       {/* Bank Details  */}
 
-      <OrderNavigation />
+      {/*<OrderNavigation />*/}
+      <Swiper data={data} isStaticPills={true} style={style} />
     </ScrollView>
   );
 };

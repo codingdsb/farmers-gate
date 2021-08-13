@@ -6,7 +6,7 @@ import Card from '../../components/Card';
 const PaymentCard = () => {
   return (
     <>
-      <Text>Payment Card</Text>
+      <Text style={{height: 100, textAlign: 'center'}}>Payment Card</Text>
     </>
   );
 };
