@@ -25,6 +25,7 @@ export default function App() {
       <StatusBar style="auto" backgroundColor="#355F43" />
       <NavigationContainer>
         <Tab.Navigator
+          initialRouteName="Orders"
           screenOptions={({route}) => ({
             headerStyle: {
               backgroundColor: '#355F43',
@@ -83,7 +84,7 @@ export default function App() {
 
           <Tab.Screen
             name="Profile"
-            component={Profile}
+            component={() => <Profile name="Anup Prajapati" />}
             options={{title: 'Profile', headerTitle: 'My Profile'}}
           />
         </Tab.Navigator>

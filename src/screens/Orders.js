@@ -11,7 +11,6 @@ import {
 // components
 import Card from '../components/Card';
 import Accordion from '../components/Accordion';
-import OrderNavigation from './OrderScreens/OrderNavigation';
 
 // icons
 import Evil from 'react-native-vector-icons/EvilIcons';
@@ -21,6 +20,8 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import OrderCard from './OrderScreens/OrderCard';
 import PaymentCard from './OrderScreens/PaymentCard';
+
+// swiper
 import Swiper from 'react-native-screens-swiper/components/Swiper';
 
 const Orders = () => {
@@ -46,12 +47,12 @@ const Orders = () => {
 
   const data = [
     {
-      tabLabel: 'Order Card',
+      tabLabel: 'Orders',
       component: OrderCard,
       props: {}, // (optional) additional props
     },
     {
-      tabLabel: 'Payment Card',
+      tabLabel: 'Payments',
       component: PaymentCard,
       props: {}, // (optional) additional props
     },

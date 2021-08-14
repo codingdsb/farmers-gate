@@ -44,17 +44,15 @@ export default CommodityCard;
 
 const styles = StyleSheet.create({
   card: {
-    borderWidth: 1,
     borderRadius: 5,
-    borderColor: '#D9D9D9',
     borderBottomWidth: 0,
-    shadowColor: '#393e46',
-    /* for ios */
-    shadowOffset: {width: 0, height: 5},
-    shadowOpacity: 0.5,
-    shadowRadius: 0,
-    /* for ios */
-    elevation: 5,
+    elevation: 10,
+    backgroundColor: 'white',
+    elevation: 10,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 0},
+    shadowOpacity: 1,
+    shadowRadius: 5,
     margin: 5,
     width: 330,
     height: 250,
